@@ -286,6 +286,7 @@ blockquote p {
 .contact-details a {
   display: block;
   width: fit-content;
+  max-width: 100%;
   text-decoration: none;
 }
 .contact-details span,
@@ -300,6 +301,9 @@ blockquote p {
 .contact-details strong {
   display: block;
   margin-top: 0.2rem;
+}
+.contact-details a[href^="mailto:"] strong {
+  overflow-wrap: anywhere;
 }
 .contact-details small {
   display: block;
